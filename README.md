@@ -3,10 +3,10 @@ Mikhailova Elena
 E-mail: Elena.Mikhailova.Tomsk@gmail.com 
 phone: 8-952-803-12-58 
 
- to install node.js from https://nodejs.org/en/ 
+install node.js from https://nodejs.org/en/ 
 open cmd 
-   $npm install -g typescript 
+   $npm install -g typescript; 
 go to the projects folder 
-   $npm install 
-   $npm run tsc 
-   $npm start 
+   $npm install; 
+   $npm run tsc; 
+   $npm start; 

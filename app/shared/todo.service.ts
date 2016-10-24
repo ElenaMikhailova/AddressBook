@@ -16,11 +16,11 @@ export class TodoService {
                         .toPromise()
                         .then(res => res.json().data)
                         .catch(this.handleError);
-        let LenghTodos=3;
+        //let LenghTodos=3;
         localStorage.setItem("_LengthTodos",LenghTodos.toString());
-        for (var i=1; i<3; i++){
+        //for (var i=1; i<3; i++){
             //this.post(JSON.parse(localStorage.getItem(i.toString())));
-            localStorage.setItem(LenghTodos.toString(),JSON.stringify(todo));
+            //localStorage.setItem(LenghTodos.toString(),JSON.stringify(todo));
         }
         
     }
