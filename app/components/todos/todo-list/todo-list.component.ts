@@ -22,6 +22,10 @@ export class TodoListComponent {
         this.FilterWord="";
     }
 
+    setFilter(title: string){
+        this.FilterWord=title;
+    }
+
     get sortedTodos(): ITodo[] {
         return this.todos
             .map((todo:ITodo) => {

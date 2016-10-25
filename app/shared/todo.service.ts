@@ -12,16 +12,18 @@ export class TodoService {
     constructor(private http: Http) {}
 
     getTodos(): Promise<ITodo[]> {
+        
+        //let LenghTodos=3;
+        localStorage.setItem("_LengthTodos","0");
+        //localStorage.setItem("_LengthTodos",LenghTodos.toString());
+        for (var i=1; i<3; i++){
+            //this.post(JSON.parse(localStorage.getItem(i.toString())));
+            localStorage.setItem(i.toString(),JSON.stringify(""));
+        }
         return this.http.get(this.apiUrl)
                         .toPromise()
                         .then(res => res.json().data)
                         .catch(this.handleError);
-        //let LenghTodos=3;
-        localStorage.setItem("_LengthTodos",LenghTodos.toString());
-        //for (var i=1; i<3; i++){
-            //this.post(JSON.parse(localStorage.getItem(i.toString())));
-            //localStorage.setItem(LenghTodos.toString(),JSON.stringify(todo));
-        }
         
     }
 

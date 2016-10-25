@@ -21,8 +21,4 @@ export class TodoFormComponent {
             this.created.emit(todo);
         }
     }
-
-    setFilter(title: string){
-        TodoListComponent.prototype.FilterWord=title;
-    }
 }
